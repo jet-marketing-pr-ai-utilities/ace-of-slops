@@ -1,0 +1,28 @@
+version: "2.0.0"
+name: ace-of-slops-ru
+language: ru
+profile: default
+output: rewrite          # rewrite | diff | audit | score
+tone: null                # casual | professional | auto
+
+lexicon:
+  density_threshold: 3.0
+
+stylometry:
+  languages: [ru]
+  burstiness_low: 0.30
+  burstiness_high: 0.50
+  mattr_low: 0.55
+  mattr_high: 0.70
+
+ouroboros:
+  enabled: false
+  target_score: 25
+  max_iterations: 3
+  plateau_threshold: 3
+  fidelity_floor: 70
+  mps_floor: 70
+
+skip-patterns: []
+blocklist: []
+allowlist: []
